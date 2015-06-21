@@ -2,25 +2,26 @@
 public class ex11_2_103021076 {
 	public static void main(String[] avg){
 		int[][] img = randImg();
-//		int x1 = 0;
-//		int y1 = img.length;
-//		int x2 = 0;
-//		int y2 = img.length;
-		System.out.println(TransCode(img,0,img.length,0,img.length,false));
+		System.out.println(TransCode(img,0,img.length,0,img.length,true,""));
 	}
-	public static String TransCode(int[][] data, int x1, int y1, int x2, int y2, boolean tt){
+	public static String TransCode(int[][] data, int x1, int y1, int x2, int y2, boolean tt,String str){
 		int len = data.length;
 		for(int i=x1 ; i<x2 ; i++){
 			for(int j=y1 ; j<y2 ; j++){
 				if(data[i][j] > 0){
-					return "1";
+					return "1"+;
 				}else{
-					return "0";
+					return "0"+;
 				}
 			}
 		}
 	//²×¤î±ø¥ó x1 = x2
-		String str = (TransCode(data,0,len/2)) + (TransCode(data,len/2,len));
+		if(tt){		//ª½¤Á
+			str += 
+		}else{		//¾î¤Á
+			 
+		}
+		str = (TransCode(data,0,len/2)) + (TransCode(data,len/2,len));
 		return str;
 	}
 	
