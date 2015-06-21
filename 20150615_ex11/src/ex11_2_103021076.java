@@ -8,7 +8,8 @@ public class ex11_2_103021076 {
 		String str = (TransCode(img,0,0,len/2,len,!tt))
 				   + (TransCode(img,len/2,0,len,len,!tt));	//第一次直切
 		System.out.println(str);
-		System.out.println(toDec(str)+":"+str.length());
+//		System.out.println(toDec(str)+":"+str.length());
+		//str丟入二元樹提取樹葉的部分
 	}
 
 	public static String TransCode(int[][] data, int x1, int y1, int x2, int y2, boolean tt){
