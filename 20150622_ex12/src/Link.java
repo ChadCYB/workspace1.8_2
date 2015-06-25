@@ -20,9 +20,22 @@ public class Link {
 		showData(root);
 	}
 	public void showData(Node nod2){
-		System.out.println(nod2.name+"\t"+nod2.high);
+		System.out.println(nod2.name+"\t"+nod2.height);
 		if(nod2.nextNode != null){
 			showData(nod2.nextNode);
 		}
 	}
+//	public Node getData(Node nod2,int count){
+//		if(count <= 1){
+//			return nod2;
+//		}else{
+//			return getData(nod2.nextNode, count--);
+//		}
+//	}
+//	public void deep(Node nod2){
+//		System.out.println(nod2.name+"\t"+nod2.high);
+//		if(nod2.nextNode != null){
+//			showData(nod2.nextNode);
+//		}
+//	}
 }

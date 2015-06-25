@@ -22,10 +22,18 @@ public class ex12_1 {
 				break;
 			}
 		}
-		System.out.println("\n姓名\t身高");
+		System.out.println("\n<資料顯示>\n姓名\t身高");
 		link.showData();
 		
-		BinaryTree tree = new BinaryTree(link.root.name, link.root.high);
+		Node node = link.root;
+		BinaryTree tree = new BinaryTree(node.name, node.height);
+		while(node.nextNode != null){
+			node = node.nextNode;
+			tree.addLast(node.name, node.height);
+		}
+		System.out.println("\n<二元樹排序>\n姓名\t身高");
+		tree.vInOrder();
 		
 	}
+
 }
