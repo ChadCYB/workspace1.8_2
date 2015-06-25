@@ -24,5 +24,8 @@ public class ex12_1 {
 		}
 		System.out.println("\n©m¦W\t¨­°ª");
 		link.showData();
+		
+		BinaryTree tree = new BinaryTree(link.root.name, link.root.high);
+		
 	}
 }
